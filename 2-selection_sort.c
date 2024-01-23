@@ -6,7 +6,7 @@
  * @k: Input swap 2
  */
 
-void swap_ints(int *j, int *k)
+void two_int_swap(int *j, int *k)
 {
 	int tmp = *j;
 	*j = *k;
@@ -14,7 +14,8 @@ void swap_ints(int *j, int *k)
 }
 
 /**
- * selection_sort - A function that sorts an array of integers in ascending order
+ * selection_sort - A function that sorts an arra
+ * of integers in ascending order
  * using the selection sort algorithm
  * @array: Input
  * @size: Input
@@ -37,7 +38,7 @@ void selection_sort(int *array, size_t size)
 
 		if ((array + sl) != kay)
 		{
-			swap_ints(array + sl, kay);
+			two_int_swap(array + sl, kay);
 			print_array(array, size);
 		}
 	}
