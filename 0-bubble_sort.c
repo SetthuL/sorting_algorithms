@@ -8,9 +8,7 @@
 
 void two_int_swap(int *j, int *k)
 {
-	int tmp;
-
-	tmp = *j;
+	int tmp = *j;
 	*j = *k;
 	*k = tmp;
 }
