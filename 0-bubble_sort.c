@@ -2,11 +2,11 @@
 
 /**
  * two_int_swap - A function that swaps two integers in an array
- * @a: Input int swap 1
- * @b: Input int swap 2
+ * @j: Input int swap 1
+ * @k: Input int swap 2
  */
 
-void swap_ints(int *j, int *k)
+void two_int_swap(int *j, int *k)
 {
 	int tmp;
 
@@ -37,9 +37,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[sl] > array[sl + 1])
 			{
-				swap_ints(array +sl, array + sl + 1);
+				two_int_swap(array + sl, array + sl + 1);
 				print_array(array, size);
-				bsl = fclose;
+				bsl = false;
 			}
 		}
 		len--;
